@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Grid Layout with @support flexbox fallback</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .grid .item .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: filter 0.5s ease;
+    }
+    
+    .grid .item:hover .box img,
+    .grid .item:focus .box img {
+      filter: grayscale(0%);
+    }
+    
+    .grid .item {
+      background-color: #29343d /* Anthrazit Farbe */
+    }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="header">
+  <h1>Bildergallery</h1>
+  <h2>Impressionen aus dem Casino in Bendern</h2>
+</header>
+
+<div class="grid">
+  <div class="item" tabindex="1">
+    <div class="box">
+      <img src="./GCLI_Mario_DSC06115_print-scaled.jpg" alt="Bild 1">
+      <div class="tooltip">grid-area: hero</div>
+    </div>
+  </div>
+  <div class="item" tabindex="2">
+    <div class="box">
+      <img src="./hero-bg2.jpg" alt="Bild 2">
+      <div class="tooltip">grid-area: big</div>
+    </div>
+  </div>
+  <div class="item" tabindex="3">
+    <div class="box">
+      <img src="./GC-Pokerroom-1.jpg" alt="Bild 3">
+      <div class="tooltip">grid-area: medium</div>
+    </div>
+  </div>
+  <div class="item" tabindex="4">
+    <div class="box">
+      <img src="./gallery-casino.jpg" alt="Bild 4">
+      <div class="tooltip">grid-area: medium</div>
+    </div>
+  </div>
+  <div class="item" tabindex="5">
+    <div class="box">
+      <img src="./poker.jpg" alt="Bild 5">
+      <div class="tooltip">grid-area: small</div>
+    </div>
+  </div>
+  <div class="item" tabindex="6">
+    <div class="box">
+      <img src="./poker.jpg" alt="Bild 6">
+      <div class="tooltip">grid-area: small</div>
+    </div>
+  </div>
+  <div class="item" tabindex="7">
+    <div class="box">
+      <img src="./poker.jpg" alt="Bild 7">
+      <div class="tooltip">grid-area: small</div>
+    </div>
+  </div>
+  <div class="item" tabindex="8">
+    <div class="box">
+      <img src="./poker.jpg" alt="Bild 8">
+      <div class="tooltip">grid-area: small</div>
+    </div>
+  </div>
+  <div class="item" tabindex="9">
+    <div class="box">
+      <img src="./poker.jpg" alt="Bild 9">
+      <div class="tooltip">grid-area: small</div>
+    </div>
+  </div>
+  <div class="item" tabindex="10">
+    <div class="box">
+      <img src="./poker.jpg" alt="Bild 10">
+      <div class="tooltip">grid-area: small</div>
+    </div>
+  </div>
+  <div class="item" tabindex="11">
+    <div class="box">
+      <img src="./poker.jpg" alt="Bild 11">
+      <div class="tooltip">grid-area: small</div>
+    </div>
+  </div>
+  <div class="item" tabindex="12">
+    <div class="box">
+      <img src="./poker.jpg" alt="Bild 12">
+      <div class="tooltip">grid-area: small</div>
+    </div>
+  </div>
+  <div class="item" tabindex="13">
+    <div class="box">
+      <img src="./poker.jpg" alt="Bild 13">
+      <div class="tooltip">grid-area: small</div>
+    </div>
+  </div>
+  <div class="item" tabindex="14">
+    <div class="box">
+      <img src="./poker.jpg" alt="Bild 14">
+      <div class="tooltip">grid-area: small</div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+</body>
+</html>
+
+
